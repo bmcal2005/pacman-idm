@@ -1,0 +1,6 @@
+- Atari-HEAD uses full ALE action IDs: 0 NOOP, 1 FIRE, 2 UP, 3 RIGHT, 4 LEFT, 5 DOWN, 6-9 diagonals, 10-17 FIRE combos.
+- Original repo mapped 1=UP, 2=RIGHT... so its Ms. Pac-Man labels are off by one. Factorized experiment was testing scrambled axes.
+- 22 trials, 388,602 frames. Cardinals 90%, NOOP 4.8%, each diagonal ~1.2%, FIRE ~0.
+- Old repo's "UP" (raw 1) = 4 frames total -> confirms off-by-one.
+- Always-guess-a-cardinal baseline ≈ 90% accuracy, so accuracy alone is meaningless here.
+- Pac-Man may not turn until he reaches an opening, so press and motion can be offset by a few frames.
