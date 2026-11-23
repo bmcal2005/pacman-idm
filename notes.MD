@@ -28,3 +28,8 @@
 - One-axis diagonals: model picks the SEEN half 70–74% vs UNSEEN half 11–14% (5–6x).
 - Both-axis diagonals: exact rises 15% -> 26% (baseline), 13% -> 23% (factorized), but ~75% still called a cardinal.
 - Check: how often do CARDINAL presses also show both-axis motion (cornering)?
+- Both-axis motion: 27–37% of diagonal presses vs 4–6% of cardinal presses (~6x more likely).
+- But cardinals are ~20x more common -> only 21% of both-axis clips are diagonal presses (base rates).
+- Model's exact rate on visible diagonals (23–26%) is close to that 21%.
+- Conclusion: diagonal ceiling is a data/observability limit, not a model limit. Explains the factorized tie.
+- For VPT, labeling an invisible diagonal as its visible half yields the same behavior -> "error" is mostly harmless.
