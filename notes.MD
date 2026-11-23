@@ -4,3 +4,6 @@
 - Old repo's "UP" (raw 1) = 4 frames total -> confirms off-by-one.
 - Always-guess-a-cardinal baseline ≈ 90% accuracy, so accuracy alone is meaningless here.
 - Pac-Man may not turn until he reaches an opening, so press and motion can be offset by a few frames.
+- Phase 3: 7,942,089 params (matches original). Untrained loss 2.190 ≈ ln 9.
+- Memorized 18 clips (2 per class) in 28 steps.
+- Laptop CPU: ~4.5–11.5 s/step -> 80–200+ hours for 15 epochs. GPU required.
