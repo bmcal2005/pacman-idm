@@ -7,3 +7,5 @@
 - Phase 3: 7,942,089 params (matches original). Untrained loss 2.190 ≈ ln 9.
 - Memorized 18 clips (2 per class) in 28 steps.
 - Laptop CPU: ~4.5–11.5 s/step -> 80–200+ hours for 15 epochs. GPU required.
+- BatchNorm gotcha: memorized batch = 18/18 in train mode, 2/18 (chance) in eval mode.
+  Running mean/var lag behind fast weight changes. Harmless in full training.
