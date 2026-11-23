@@ -9,3 +9,9 @@
 - Laptop CPU: ~4.5–11.5 s/step -> 80–200+ hours for 15 epochs. GPU required.
 - BatchNorm gotcha: memorized batch = 18/18 in train mode, 2/18 (chance) in eval mode.
   Running mean/var lag behind fast weight changes. Harmless in full training.
+  - Baseline 9-way, 15 epochs on T4: test acc 0.862, macro-F1 0.574, bal-acc 0.567. Best val F1 0.575 (val ≈ test).
+- Lazy "always LEFT": acc 0.281, F1 0.049.
+- Cardinals ~0.89–0.90 F1, NOOP 0.81, diagonals 0.17–0.23.
+- Missed diagonals land on one of their two components ~80% of the time, almost never elsewhere.
+- Hypothesis: a diagonal press in a corridor looks identical to the cardinal move -> action not observable.
+- NOOP -> LEFT 17%: Pac-Man keeps moving with no input.
