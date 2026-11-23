@@ -15,3 +15,9 @@
 - Missed diagonals land on one of their two components ~80% of the time, almost never elsewhere.
 - Hypothesis: a diagonal press in a corridor looks identical to the cardinal move -> action not observable.
 - NOOP -> LEFT 17%: Pac-Man keeps moving with no input.
+- Factorized (same everything, unweighted CE_h + CE_v), seed 42: test acc 0.869, F1 0.566, bal-acc 0.561, H 0.907, V 0.927.
+- vs baseline: acc +0.007, F1 −0.008. Tie within single-seed noise.
+- Diagonals: both models get exactly one half right ~80% of the time. Head design doesn't break the wall.
+- UPLEFT 22% -> 10% = ~17 of 134 clips; treat as noise until replicated.
+- Supports hypothesis: diagonal presses often not observable in the frames.
+- Original repo also tied, but with scrambled axes, so it never tested this.
