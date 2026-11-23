@@ -21,3 +21,10 @@
 - UPLEFT 22% -> 10% = ~17 of 134 clips; treat as noise until replicated.
 - Supports hypothesis: diagonal presses often not observable in the frames.
 - Original repo also tied, but with scrambled axes, so it never tested this.
+- Tracker: found Pac-Man in 97% of frames; motion matches label ~76–90% for cardinals.
+- NOOP: Pac-Man stands still 94% of the time. But 17% of LEFT presses also show him still (blocked).
+  ~635 still-NOOP vs ~610 still-LEFT clips -> visually identical -> explains NOOP->LEFT 17%.
+- Diagonal presses: 68% move on one axis only, 31% both, 1% still.
+- One-axis diagonals: model picks the SEEN half 70–74% vs UNSEEN half 11–14% (5–6x).
+- Both-axis diagonals: exact rises 15% -> 26% (baseline), 13% -> 23% (factorized), but ~75% still called a cardinal.
+- Check: how often do CARDINAL presses also show both-axis motion (cornering)?
